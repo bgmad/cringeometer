@@ -2,7 +2,7 @@ import React from 'react';
 import { client } from './client';
 
 const MAX = 500;
-const ACTIVATIONCOMMAND = '!cringe'
+const ACTIVATIONCOMMAND = 'KEKW'
 
 export default class App extends React.Component {
   state = {
