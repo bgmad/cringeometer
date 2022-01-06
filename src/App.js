@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
 import { client } from './client';
 
@@ -8,7 +6,6 @@ const MAX = 500;
 export default class App extends React.Component {
   state = {
     progressValue: 0,
-    lastUpdate: Date.now()
   }
   componentDidMount() {
     client.connect();
@@ -30,7 +27,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div>
         <progress id="cringe" value={this.state.progressValue} max={MAX}></progress>
