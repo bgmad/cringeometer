@@ -1,7 +1,7 @@
 import React from 'react';
 import { client } from './client';
 
-const MAX = 500;
+const MAX = 100;
 const ACTIVATIONCOMMAND = 'KEKW'
 
 export default class App extends React.Component {
