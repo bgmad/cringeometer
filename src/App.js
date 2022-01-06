@@ -2,6 +2,7 @@ import React from 'react';
 import { client } from './client';
 
 const MAX = 500;
+const ACTIVATIONCOMMAND = '!cringe'
 
 export default class App extends React.Component {
   state = {
@@ -10,7 +11,7 @@ export default class App extends React.Component {
   componentDidMount() {
     client.connect();
     client.on("message", (channel, tags, message, self) => {
-      if (message === "KEKW" && this.state.progressValue < MAX) {
+      if (message === ACTIVATIONCOMMAND && this.state.progressValue < MAX) {
         this.setState({
           ...this.state,
           progressValue: this.state.progressValue + 1,
